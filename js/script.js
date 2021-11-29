@@ -96,14 +96,14 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText)
-        calculator.updateDisplay
+        calculator.updateDisplay()
     })
 })
 
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.chooseOperation(button.innerText)
-        calculator.updateDisplay
+        calculator.updateDisplay()
     })
 })
 
